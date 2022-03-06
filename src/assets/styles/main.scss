@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap");
+
+.StockCurrencies {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(183, 201, 217);
+
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+
+  &-container {
+    display: flex;
+    align-items: center;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 500px;
+      min-height: 600px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+      &-title {
+        padding-top: 50px;
+        font-size: 20px;
+        color: rgb(54, 129, 207);
+      }
+
+      &-output {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        max-width: 350px;
+
+        &-subtitle {
+          color: rgb(183, 201, 217);
+
+          b {
+            font-size: 20px;
+            color: rgb(54, 129, 207);
+          }
+        }
+
+        &-number {
+          word-break: break-all;
+          font-size: 80px;
+          color: rgb(54, 129, 207);
+        }
+      }
+
+      &-graph {
+        width: 400px;
+        height: 250px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    &-converter {
+      max-width: 400px;
+      height: 550px;
+      padding: 30px 0;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: rgb(54, 129, 207);
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+      &-field {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        margin: 30px 0;
+
+        background-color: rgb(95, 154, 217);
+
+        select {
+          color: #fff;
+          padding-left: 15px;
+
+          font-size: 25px;
+          outline: none;
+          border: none;
+          background-color: transparent;
+        }
+
+        input {
+          width: 100%;
+          margin: 0 50px;
+
+          color: #fff;
+          font-size: 40px;
+          outline: none;
+          border: none;
+          background-color: transparent;
+
+          &::placeholder {
+            color: #fff;
+          }
+
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+      }
+
+      &-switch {
+        text-align: center;
+
+        .icon {
+          width: 100px;
+          height: 100px;
+          color: #fff;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            transform: rotate(180deg);
+            color: rgb(1, 255, 213);
+          }
+        }
+      }
+    }
+  }
+}
